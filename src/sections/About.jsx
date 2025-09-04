@@ -1,13 +1,12 @@
 import React from "react";
-import profileImage from "../assets/profile.jpeg"; // update the path if needed
+import profileImage from "../assets/profile.jpeg";
 
 const About = () => {
   return (
     <section id="about" className="py-16 px-4 bg-white">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
-        
-        {/* Text on the left */}
-        <div className="md:w-1/2 text-left">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+        {/* Text Left */}
+        <div>
           <h2 className="text-3xl font-bold text-gray-800 mb-4">About Me</h2>
           <p className="text-lg text-gray-700 leading-relaxed">
             I'm Thomas Bentivoglio, a Mechanical Engineering and Computer Science double major at Case Western Reserve University.
@@ -16,12 +15,12 @@ const About = () => {
           </p>
         </div>
 
-        {/* Image on the right */}
-        <div className="md:w-1/2 flex justify-center">
+        {/* Image Right */}
+        <div className="flex justify-center">
           <img
             src={profileImage}
             alt="Thomas Bentivoglio"
-            className="rounded-lg shadow-lg w-full max-w-sm object-cover"
+            className="rounded-xl shadow-xl w-full max-w-sm object-cover"
           />
         </div>
       </div>

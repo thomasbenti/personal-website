@@ -3,6 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body,
+#root {
+  @apply bg-white text-gray-900 min-h-screen;
+}
+
 * {
   margin: 10;
   padding: 10;
