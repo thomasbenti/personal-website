@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="font-sans scroll-smooth w-screen overflow-x-hidden">
       <Navbar />
-      <main className="pt-16">
+      <main className="pt-20">
         <Home />
         <About />
         <Research />
