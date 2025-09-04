@@ -1,32 +1,29 @@
 .resume {
-  background-color: white;
-  padding: 4rem 2rem;
+  background-color: #ffffff;
+  padding: 6rem 2rem;
   text-align: center;
 }
 
-.resume h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
 .resume-download a {
+  background: #0070f3;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 500;
   display: inline-block;
   margin-bottom: 2rem;
-  color: white;
-  background-color: #0070f3;
-  padding: 0.75rem 1.5rem;
-  text-decoration: none;
-  border-radius: 4px;
+  transition: background 0.3s ease;
 }
 
 .resume-download a:hover {
-  background-color: #005dc1;
+  background: #005dc1;
 }
 
 .resume-viewer embed {
   width: 100%;
-  max-width: 800px;
+  max-width: 850px;
   height: 700px;
+  margin: 0 auto;
   border: 1px solid #ccc;
   border-radius: 8px;
 }

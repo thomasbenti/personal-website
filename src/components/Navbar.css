@@ -1,32 +1,97 @@
-/* src/components/Navbar.css */
+/* Navbar.css */
 
 .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 2rem;
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
+  background: linear-gradient(90deg, #f0f4ff, #ffffff);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  scroll-margin-top: 70px;
+  animation: fadeInDown 0.5s ease-in-out;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .navbar-logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #0066ff;
+  color: #0070f3;
+  transition: transform 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.1);
 }
 
 .navbar-links {
-  display: flex;
   list-style: none;
+  display: flex;
   gap: 1.5rem;
 }
 
 .navbar-links a {
-  text-decoration: none;
   color: #333;
   font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  scroll-behavior: smooth;
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.navbar-links a:hover {
-  color: #0066ff;
+.navbar-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #0070f3;
+  transition: width 0.3s ease;
+}
+
+.navbar-links a:hover::after,
+.navbar-links a.active::after {
+  width: 100%;
+}
+
+.navbar-links a:hover,
+.navbar-links a.active {
+  color: #0070f3;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+body {
+  background: linear-gradient(to bottom, #ffffff, #f5f8ff);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  margin: 0;
+  padding: 0;
 }
