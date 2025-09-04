@@ -1,54 +1,40 @@
-/* index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* 1. Reset some global browser styles */
-* {
+/* Reset margins/padding and ensure 100% sizing */
+html, body, #root {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: white;
+}
+
+/* Prevent horizontal scrollbars */
+* {
   box-sizing: border-box;
 }
 
-/* 2. Apply a base font and background */
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  background-color: #ffffff;
-  color: #1f2937; /* Tailwind gray-800 */
+/* Smooth scrolling */
+html {
   scroll-behavior: smooth;
 }
 
-/* 3. Ensure the full height is used */
-html, body, #root {
-  height: 100%;
+/* Ensure Tailwind fonts apply correctly */
+body {
+  @apply font-sans text-gray-800;
 }
 
-/* 4. Prevent content hiding under fixed navbar */
-main {
-  padding-top: 5rem; /* Adjust based on navbar height (e.g., 80px) */
-}
-
-/* 5. Tailwind-like utility class fallback (optional if Tailwind isn't working) */
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
+/* Optional: image consistency */
 img {
   max-width: 100%;
   display: block;
 }
 
-/* 6. Improve smooth transitions */
-button, a {
+/* Optional: link transition */
+a, button {
   transition: all 0.3s ease;
-}
-
-/* 7. Optional scrollbar styling */
-::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 10px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
 }
