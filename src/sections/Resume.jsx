@@ -17,7 +17,7 @@ const Resume = () => {
           src="/Resume.pdf"
           type="application/pdf"
           width="100%"
-          height="700px"
+          height="900px"
         />
       </div>
     </section>

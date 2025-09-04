@@ -1,6 +1,5 @@
 import React from "react";
-import "./Research.css";
-
+import "./Research.css"; 
 const researchItems = [
   {
     title: "About physical robot",
@@ -14,11 +13,10 @@ const researchItems = [
 
 const Research = () => {
   return (
-    <section id="research" className="research">
-      <div className="research-container">
-        <h2>Research</h2>
-
-        <div className="research-grid">
+    <section id="research" className="research-section">
+      <div className="research-overlay">
+        <h2 className="research-heading">Research</h2>
+        <div className="research-cards">
           {researchItems.map((item, index) => (
             <div key={index} className="research-card">
               <p>{item.title}</p>
