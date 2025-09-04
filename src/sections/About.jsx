@@ -1,13 +1,13 @@
 import React from "react";
-import myPhoto from "../assets/profile.jpeg"; // 🔁 Replace with your actual image path
+import profileImage from "../assets/profile.jpeg"; // update the path if needed
 
 const About = () => {
   return (
     <section id="about" className="py-16 px-4 bg-white">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-10">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
         
-        {/* Text Section */}
-        <div className="flex-1 text-center md:text-left">
+        {/* Text on the left */}
+        <div className="md:w-1/2 text-left">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">About Me</h2>
           <p className="text-lg text-gray-700 leading-relaxed">
             I'm Thomas Bentivoglio, a Mechanical Engineering and Computer Science double major at Case Western Reserve University.
@@ -16,12 +16,12 @@ const About = () => {
           </p>
         </div>
 
-        {/* Image Section */}
-        <div className="flex-1 flex justify-center">
+        {/* Image on the right */}
+        <div className="md:w-1/2 flex justify-center">
           <img
-            src={myPhoto}
+            src={profileImage}
             alt="Thomas Bentivoglio"
-            className="w-100 h-100 object-cover rounded-lg shadow-lg"
+            className="rounded-lg shadow-lg w-full max-w-sm object-cover"
           />
         </div>
       </div>
