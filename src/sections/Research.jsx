@@ -1,4 +1,5 @@
 import React from "react";
+import "./Research.css";
 
 const researchItems = [
   {
@@ -13,25 +14,15 @@ const researchItems = [
 
 const Research = () => {
   return (
-    <section id="research" className="bg-gray-100 py-16 px-4">
-      <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl font-bold text-gray-800 mb-12">Research</h2>
+    <section id="research" className="research">
+      <div className="research-container">
+        <h2>Research</h2>
 
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="research-grid">
           {researchItems.map((item, index) => (
-            <div
-              key={index}
-              className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition"
-            >
-              <p className="text-lg font-medium text-gray-700 mb-2">
-                {item.title}
-              </p>
-              <a
-                href={item.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 font-semibold hover:underline"
-              >
+            <div key={index} className="research-card">
+              <p>{item.title}</p>
+              <a href={item.url} target="_blank" rel="noopener noreferrer">
                 View on GitHub →
               </a>
             </div>
