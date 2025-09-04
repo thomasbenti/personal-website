@@ -5,12 +5,11 @@ const Contact = () => {
   return (
     <section id="contact" className="contact">
       <h2>Contact</h2>
-      <form className="contact-form">
-        <input type="text" placeholder="Name" required />
-        <input type="email" placeholder="Email" required />
-        <textarea placeholder="Your message..." rows="5" required></textarea>
-        <button type="submit">Send</button>
-      </form>
+      <div className="contact-links">
+        <a href="mailto:thomas@example.com" className="contact-link">📧 Email</a>
+        <a href="tel:+1234567890" className="contact-link">📞 Phone</a>
+        <a href="https://www.linkedin.com/in/thomasbentivoglio" target="_blank" rel="noopener noreferrer" className="contact-link">🔗 LinkedIn</a>
+      </div>
     </section>
   );
 };
