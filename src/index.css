@@ -1,40 +1,53 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* Reset margins/padding and ensure 100% sizing */
-html, body, #root {
+/* Reset & Base */
+* {
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
   box-sizing: border-box;
-  overflow-x: hidden;
+}
+
+html, body {
+  font-family: Arial, sans-serif;
   background-color: white;
-}
-
-/* Prevent horizontal scrollbars */
-* {
-  box-sizing: border-box;
-}
-
-/* Smooth scrolling */
-html {
+  color: #222;
   scroll-behavior: smooth;
 }
 
-/* Ensure Tailwind fonts apply correctly */
-body {
-  @apply font-sans text-gray-800;
+/* Layout Helpers */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-/* Optional: image consistency */
-img {
-  max-width: 100%;
-  display: block;
+/* Nav */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 2rem;
+  border-bottom: 1px solid #eee;
 }
 
-/* Optional: link transition */
-a, button {
-  transition: all 0.3s ease;
+.navbar a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #222;
+}
+
+.navbar a:hover {
+  color: #0070f3;
+}
+
+/* Section headings */
+section {
+  padding: 4rem 0;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  line-height: 1.6;
 }
