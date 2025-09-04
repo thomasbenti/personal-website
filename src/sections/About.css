@@ -1,0 +1,36 @@
+.about {
+  background-color: white;
+  padding: 4rem 2rem;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.about-text {
+  flex: 2;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  line-height: 1.6;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}

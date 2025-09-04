@@ -1,4 +1,3 @@
-/* Reset & Base */
 * {
   margin: 0;
   padding: 0;
@@ -7,47 +6,18 @@
 
 html, body {
   font-family: Arial, sans-serif;
-  background-color: white;
-  color: #222;
+  background-color: #ffffff;
+  color: #111111;
   scroll-behavior: smooth;
+  min-height: 100%;
 }
 
-/* Layout Helpers */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
+img {
+  max-width: 100%;
+  display: block;
 }
 
-/* Nav */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.25rem 2rem;
-  border-bottom: 1px solid #eee;
-}
-
-.navbar a {
-  margin-left: 1rem;
+a {
+  color: inherit;
   text-decoration: none;
-  color: #222;
-}
-
-.navbar a:hover {
-  color: #0070f3;
-}
-
-/* Section headings */
-section {
-  padding: 4rem 0;
-}
-
-h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-p {
-  line-height: 1.6;
 }
