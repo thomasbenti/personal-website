@@ -1,12 +1,50 @@
-# React + Vite
+# Thomas Bentivoglio – Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio website built using **React**, **Vite**, and **Tailwind CSS**, showcasing my background in **Mechanical Engineering**, **Computer Science**, and **Robotics**. The site includes sections for my resume, projects, research, and contact details.
 
-Currently, two official plugins are available:
+## Live Site
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🌐 [Visit My Portfolio](http://thomasentivoglio.me)
 
-## Expanding the ESLint configuration
+## Preview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![screenshot](./public/vite.svg) <!-- Replace with actual screenshot path if needed -->
+
+## Tech Stack
+
+- ⚛️ React
+- ⚡ Vite
+- 💨 Tailwind CSS
+- ☁️ Netlify (Hosting)
+
+## Project Structure
+personal-website/
+├── public/                     # Static assets (Resume, favicon, etc.)
+├── src/
+│   ├── assets/                 # Profile image, logos, etc.
+│   ├── components/             # Navbar, Footer
+│   ├── sections/               # Home, About, Projects, Resume, Contact, Research
+│   ├── App.jsx                 # Main application file
+│   └── main.jsx                # Entry point
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+
+##  Features
+
+-  Responsive layout
+-  Resume download & preview
+-  Project and research showcases
+-  Contact form (static)
+-  Smooth scroll navigation
+
+##  Local Development
+
+To run this project locally:
+
+```bash
+git clone https://github.com/your-username/personal-website.git
+cd personal-website
+npm install
+npm run dev
