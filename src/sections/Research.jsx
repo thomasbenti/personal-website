@@ -7,7 +7,7 @@ const researchItems = [
   },
   {
     title: "Code for robot",
-    url: "https://github.com/CyPhilLab/spirob_ctrl/tree/KALMAN",
+    url: "https://github.com/CyPhiLab/spirob_ctrl/tree/KALMAN",
   },
 ];
 
