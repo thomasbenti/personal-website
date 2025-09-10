@@ -4,7 +4,7 @@ This is my personal portfolio website built using **React**, and **Vite**, showc
 
 ## Live Site
 
-🌐 [Visit My Portfolio](http://thomasentivoglio.me)
+🌐 [Visit My Portfolio](http://www.thomasentivoglio.me)
 
 ## Preview
 
