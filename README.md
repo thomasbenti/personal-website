@@ -1,6 +1,6 @@
 # Thomas Bentivoglio – Personal Portfolio Website
 
-This is my personal portfolio website built using **React**, **Vite**, and **Tailwind CSS**, showcasing my background in **Mechanical Engineering**, **Computer Science**, and **Robotics**. The site includes sections for my resume, projects, research, and contact details.
+This is my personal portfolio website built using **React**, and **Vite**, showcasing my background in **Mechanical Engineering**, **Computer Science**, and **Robotics**. The site includes sections for my resume, projects, research, and contact details.
 
 ## Live Site
 
@@ -14,7 +14,6 @@ This is my personal portfolio website built using **React**, **Vite**, and **Tai
 
 - ⚛️ React
 - ⚡ Vite
-- 💨 Tailwind CSS
 - ☁️ Netlify (Hosting)
 
 ## Project Structure

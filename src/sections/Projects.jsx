@@ -7,14 +7,32 @@ const Projects = () => {
       <div className="projects-container">
         <h2>Projects</h2>
         <div className="project-grid">
-          <div className="project-card">
-            <h3>SpiRob Controller</h3>
-            <p>ROS2-based cable-driven hyper-redundant robot controller with MuJoCo simulation.</p>
-          </div>
-          <div className="project-card">
-            <h3>Streamlit NLP App</h3>
-            <p>Built a real-time sentiment analyzer using TextBlob and Streamlit Cloud deployment.</p>
-          </div>
+          <a
+            href="https://github.com/thomasbenti/case-eaters"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-card"
+          >
+            <h3>Case Eaters</h3>
+            <p>
+              A website where we allowed people on the meal plan to auction off
+              meal swipes, to reduce food waste and save students money. As well
+              as making a map for users to post events on campus that have free
+              food.
+            </p>
+          </a>
+
+          <a
+            href="https://caseeaters.streamlit.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-card"
+          >
+            <h3>Sun Tracking Solar Panel</h3>
+            <p>
+              
+            </p>
+          </a>
         </div>
       </div>
     </section>
