@@ -18,7 +18,7 @@ const Projects = () => {
               A website where we allowed people on the meal plan to auction off
               meal swipes, to reduce food waste and save students money. As well
               as making a map for users to post events on campus that have free
-              food.
+              food. (IN PROGRESS)
             </p>
           </a>
 
@@ -28,7 +28,7 @@ const Projects = () => {
             rel="noopener noreferrer"
             className="project-card"
           >
-            <h3>Sun Tracking Solar Panel</h3>
+            <h3>Sun Tracking Solar Panel. IN PROGRESS </h3>
             <p>
               
             </p>
