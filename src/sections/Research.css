@@ -1,3 +1,5 @@
+/* Research.css */
+
 .research-section {
   background-image: url("/cyphilab-bg.png");
   background-size: contain;
@@ -15,11 +17,12 @@
   background-color: rgba(255, 255, 255, 0.85);
   padding: 3rem;
   border-radius: 16px;
-  max-width: 1000px;
+  max-width: 1100px;
   width: 100%;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
+/* Heading */
 .research-heading {
   font-size: 4rem;
   text-align: center;
@@ -28,33 +31,63 @@
   color: #1a202c;
 }
 
+/* Grid of cards */
 .research-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 2.5rem;
+  align-items: stretch;
 }
 
+/* Card */
 .research-card {
   background: #ffffff;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-  text-align: center;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  min-height: 420px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .research-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.14);
 }
 
+/* Slideshow area (put your carousel inside this) */
+.research-slideshow {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #edf2f7;
+}
+
+.research-slideshow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Text */
 .research-card p {
+  font-size: 1.05rem;
   font-weight: 600;
-  margin-bottom: 0.75rem;
+  margin: 0.25rem 0 0.5rem;
   color: #2d3748;
 }
 
+/* Links pinned to bottom */
 .research-card a {
+  margin-top: auto;
   color: #0070f3;
   font-weight: 600;
   text-decoration: none;
@@ -64,4 +97,45 @@
 .research-card a:hover {
   text-decoration: underline;
   color: #0051c3;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .research-overlay {
+    padding: 2rem;
+  }
+
+  .research-heading {
+    font-size: 3rem;
+  }
+
+  .research-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .research-card {
+    min-height: 380px;
+  }
+
+  .research-slideshow {
+    height: 220px;
+  }
+}
+
+@media (max-width: 500px) {
+  .research-section {
+    padding: 4rem 1.25rem;
+  }
+
+  .research-heading {
+    font-size: 2.4rem;
+  }
+
+  .research-card {
+    padding: 1.5rem;
+  }
+
+  .research-slideshow {
+    height: 200px;
+  }
 }

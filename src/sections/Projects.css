@@ -23,7 +23,7 @@
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  width: min(520px, 100%);
+  width: 45%;
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-decoration: none;
