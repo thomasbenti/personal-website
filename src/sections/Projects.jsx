@@ -124,7 +124,6 @@ const Projects = () => {
     { label: "Assembly View", src: "/Solar%20Tracker%20Assembly.png" },
     { label: "Exploded View", src: "/Solar%20Tracker%20Exploded%20Veiw.png" },
     { label: "Slide 1",  src: "/sunnies-slides/DDR_ Sunnies1.png" },
-    { label: "Slide 2",  src: "/sunnies-slides/DDR_ Sunnies2.png" },
     { label: "Slide 3",  src: "/sunnies-slides/DDR_ Sunnies3.png" },
     { label: "Slide 4",  src: "/sunnies-slides/DDR_ Sunnies4.png" },
     { label: "Slide 5",  src: "/sunnies-slides/DDR_ Sunnies5.png" },
