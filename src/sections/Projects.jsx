@@ -16,7 +16,6 @@ const SlideshowCard = ({
 
   const [idx, setIdx] = useState(0);
 
-  // reset index if images change or idx goes out of range
   useEffect(() => {
     if (idx >= safeImages.length) setIdx(0);
   }, [idx, safeImages.length]);
@@ -24,12 +23,14 @@ const SlideshowCard = ({
   const prev = (e) => {
     e.preventDefault();
     e.stopPropagation();
+    if (safeImages.length === 0) return;
     setIdx((i) => (i - 1 + safeImages.length) % safeImages.length);
   };
 
   const next = (e) => {
     e.preventDefault();
     e.stopPropagation();
+    if (safeImages.length === 0) return;
     setIdx((i) => (i + 1) % safeImages.length);
   };
 
@@ -118,22 +119,22 @@ const Projects = () => {
     { label: "Map", src: "/case-eaters-2.png" },
   ];
 
-  // IMPORTANT: spaces in filenames must be URL-encoded OR rename the files.
-  // Recommended rename to: solar-tracker-assembly.png, solar-tracker-exploded-view.png
   const solarImages = [
     { label: "Assembly View", src: "/Solar%20Tracker%20Assembly.png" },
     { label: "Exploded View", src: "/Solar%20Tracker%20Exploded%20Veiw.png" },
-    { label: "Slide 1",  src: "/sunnies-slides/DDR_ Sunnies1.png" },
-    { label: "Slide 3",  src: "/sunnies-slides/DDR_ Sunnies3.png" },
-    { label: "Slide 4",  src: "/sunnies-slides/DDR_ Sunnies4.png" },
-    { label: "Slide 5",  src: "/sunnies-slides/DDR_ Sunnies5.png" },
-    { label: "Slide 6",  src: "/sunnies-slides/DDR_ Sunnies6.png" },
-    { label: "Slide 7",  src: "/sunnies-slides/DDR_ Sunnies7.png" },
-    { label: "Slide 8",  src: "/sunnies-slides/DDR_ Sunnies8.png" },
-    { label: "Slide 9",  src: "/sunnies-slides/DDR_ Sunnies9.png" },
-    { label: "Slide 10", src: "/sunnies-slides/DDR_ Sunnies10.png" },
-    { label: "Slide 11", src: "/sunnies-slides/DDR_ Sunnies11.png" },
-    ];
+    { label: "Slide 1", src: "/sunnies-slides/DDR_%20Sunnies1.png" },
+    { label: "Slide 3", src: "/sunnies-slides/DDR_%20Sunnies3.png" },
+    { label: "Slide 4", src: "/sunnies-slides/DDR_%20Sunnies4.png" },
+    { label: "Slide 5", src: "/sunnies-slides/DDR_%20Sunnies5.png" },
+    { label: "Slide 6", src: "/sunnies-slides/DDR_%20Sunnies6.png" },
+    { label: "Slide 7", src: "/sunnies-slides/DDR_%20Sunnies7.png" },
+    { label: "Slide 8", src: "/sunnies-slides/DDR_%20Sunnies8.png" },
+    { label: "Slide 9", src: "/sunnies-slides/DDR_%20Sunnies9.png" },
+    { label: "Slide 10", src: "/sunnies-slides/DDR_%20Sunnies10.png" },
+    { label: "Slide 11", src: "/sunnies-slides/DDR_%20Sunnies11.png" },
+  ];
+
+
 
   return (
     <section id="projects" className="projects">
@@ -156,6 +157,8 @@ const Projects = () => {
             autoPlay={true}
             interval={3000}
           />
+
+          
         </div>
       </div>
     </section>
